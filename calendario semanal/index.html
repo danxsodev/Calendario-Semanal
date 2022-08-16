@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Calendario semanal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Calendario semanal</h1>
+        <h2>Insira o número que corresponde ao dia da semana</h2>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <div class="campo">
+                    <label for="textNum">Insira o número correspondente ao dia da semana</label>
+                    <input type="text" name="textbox" id="textboxNum" placeholder="Digite números entre 1 até 7">
+                </div>
+
+                <div class="campo">
+                    <label for="textExtenso">Dia da semana correspondente ao número insirido</label>
+                    <input type="text" name="textbox" id="textboxExtenso" placeholder="Dia da semana correspondente" disabled>
+                </div>
+
+                <div class="button">
+                    <input type="button" id="mostrar" onclick="Mostrar()" value="Mostrar">
+                    <input type="reset" id="limpar" onclick="Limpar()" value="Limpar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
